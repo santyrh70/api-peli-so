@@ -1,0 +1,9 @@
+---
+applications:
+  - name: api-pelicula-hv1m
+    random-route: true
+    memory: 128M
+    env:
+      FLASK_APP: entrypoint:app
+      FLASK_ENV: development
+      APP_SETTINGS_MODULE: config.default
